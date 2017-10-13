@@ -1,0 +1,2 @@
+class Fquiz < ApplicationRecord
+end
