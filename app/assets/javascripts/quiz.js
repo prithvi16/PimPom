@@ -34,6 +34,9 @@
                         success: function (resp) {
                             link = "/q/" + resp.qid
                             app.qlink = link
+                            $( "#thelink" ).removeClass("hide-my-ass");
+                            $( "#newsub" ).addClass("hide-my-ass");
+                            console.log("woow");
                         },
                         dataType: "json"
                     });
