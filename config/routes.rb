@@ -3,8 +3,9 @@ Rails.application.routes.draw do
 
   get 'home/index'
   get '/q/:id' , to: 'quiz#show'
-
+  post '/q/:id' , to: 'quiz#submit'
   post 'quiz/new', to: 'quiz#create'
+
 
   
 
