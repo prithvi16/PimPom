@@ -24,6 +24,7 @@
 }
 
 #app{
+  padding:5px 50px;
 margin:50px;
 }
 
@@ -60,6 +61,26 @@ input{
   font-size:30px;
   margin:20px;
 }
+.linktext{
+  text-align: center;
+  font-size:30px;
+  margin:20px;
+ 
+}
+.innerpadding{
+       padding: 2px 5px; 
+}
+.collection .collection-item{
+  padding:0;
+}
+.myclass{
+ 
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ef99ff;
+  transition: width .3s linear;
+}
 .centerbutton{
   margin: 0 auto;
   text-align: center;
@@ -67,15 +88,28 @@ input{
 .btn{
   font-family: 'PT Sans', sans-serif;
 }
+.footnote{
+font-family: 'PT Sans', sans-serif;
+padding:3px;
+font-size:15px;
+padding-bottom:12px;
+}
 
 @media only screen and (max-width : 500px) {
  #app{
-   margin:25px; 
+   margin:10px;
+   margin-top:25px; 
  }
  .introtext{
   text-align: center;
   font-size:23px;
   margin:5px;
+}
+.linktext{
+  text-align: left;
+  font-size:19px;
+  margin:5px;
+
 }
  #newsub{
   margin:10px;

@@ -1,4 +1,5 @@
 <div id="app">
+   
 
     <div class="row">
         <div class="col s12">
@@ -6,9 +7,20 @@
             <div id="newsub">
 
                 <div class="entername">
+
                     <div class="introtext">
                         Pimpom allows you to create an awesome poll. Share it with your friends and know what they think about you!
                     </div>
+                    
+                            <div class="card z-depth-5">
+                                <div class="card-image">
+                                    <img src="https://i.imgur.com/yGtRIKu.jpg">
+                
+                                </div>
+                
+                                
+                            </div>
+                       
                     <div class="introtext">
                         Enter the name by which your friends call you
                         <input style="max-width:30rem;" placeholder="Bancho" type="text" v-model="qname">
@@ -28,23 +40,30 @@
             </div>
 
             <div id="thelink" class="hide-my-ass">
-                <div class="introtext">
-                    This is your link. Share it!
-                </div>
-                <div class="introtext">
+                <div class="row">
 
-                    <a :href=qlink>
-                        <h3>{{"pimpom.ml" + qlink}}</h3>
-                         </a>
+                    <div class="col s12">
+                        <div class="introtext">
+                            This is your link. Take a screenshot or Share it!
+                        </div>
+                        <div class="introtext">
+
+                            <a :href=qlink>
+
+                                {{"pimpom.ml" + qlink}}
+                            </a>
+                        </div>
+
+
+                    </div>
+
                 </div>
-                
 
                 <div class="sharing">
 
 
                     <!-- Sharingbutton Facebook -->
-                    <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsharingbuttons.io" target="_blank"
-                        aria-label="Share on Facebook">
+                    <a class="resp-sharing-button__link" :href=fblink target="_blank" aria-label="Share on Facebook">
                         <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -55,8 +74,7 @@
                     </a>
 
                     <!-- Sharingbutton Twitter -->
-                    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io"
-                        target="_blank" aria-label="Share on Twitter">
+                    <a class="resp-sharing-button__link" :href=twlink target="_blank" aria-label="Share on Twitter">
                         <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -67,8 +85,7 @@
                     </a>
 
                     <!-- Sharingbutton Google+ -->
-                    <a class="resp-sharing-button__link" href="https://plus.google.com/share?url=http%3A%2F%2Fsharingbuttons.io" target="_blank"
-                        aria-label="Share on Google+">
+                    <a class="resp-sharing-button__link" :href=golink target="_blank" aria-label="Share on Google+">
                         <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--large">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -80,39 +97,12 @@
                             </div>Share on Google+</div>
                     </a>
 
-                    <!-- Sharingbutton Tumblr -->
-                    <a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;caption=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;content=http%3A%2F%2Fsharingbuttons.io&amp;canonicalUrl=http%3A%2F%2Fsharingbuttons.io&amp;shareSource=tumblr_share_button"
-                        target="_blank" aria-label="Share on Tumblr">
-                        <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--large">
-                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                                <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-                                    <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z"
-                                    />
-                                </svg>
-                            </div>Share on Tumblr</div>
-                    </a>
 
-                    <!-- Sharingbutton Reddit -->
-                    <a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=http%3A%2F%2Fsharingbuttons.io" target="_blank"
-                        aria-label="Share on Reddit">
-                        <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--large">
-                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <circle cx="9.391" cy="13.392" r=".978" />
-                                    <path d="M14.057 15.814c-1.14.66-2.987.655-4.122-.004-.238-.138-.545-.058-.684.182-.13.24-.05.545.19.685.72.417 1.63.646 2.568.646.93 0 1.84-.228 2.558-.642.24-.13.32-.44.185-.68-.14-.24-.445-.32-.683-.18zM5 12.086c0 .41.23.78.568.978.27-.662.735-1.264 1.353-1.774-.2-.207-.48-.334-.79-.334-.62 0-1.13.507-1.13 1.13z"
-                                    />
-                                    <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm6.673 14.055c.01.104.022.208.022.314 0 2.61-3.004 4.73-6.695 4.73s-6.695-2.126-6.695-4.74c0-.105.013-.21.022-.313C4.537 13.73 4 12.97 4 12.08c0-1.173.956-2.13 2.13-2.13.63 0 1.218.29 1.618.757 1.04-.607 2.345-.99 3.77-1.063.057-.803.308-2.33 1.388-2.95.633-.366 1.417-.323 2.322.085.302-.81 1.076-1.397 1.99-1.397 1.174 0 2.13.96 2.13 2.13 0 1.177-.956 2.133-2.13 2.133-1.065 0-1.942-.79-2.098-1.81-.734-.4-1.315-.506-1.716-.276-.6.346-.818 1.395-.88 2.087 1.407.08 2.697.46 3.728 1.065.4-.468.987-.756 1.617-.756 1.17 0 2.13.953 2.13 2.13 0 .89-.54 1.65-1.33 1.97z"
-                                    />
-                                    <circle cx="14.609" cy="13.391" r=".978" />
-                                    <path d="M17.87 10.956c-.302 0-.583.128-.79.334.616.51 1.082 1.112 1.352 1.774.34-.197.568-.566.568-.978 0-.623-.507-1.13-1.13-1.13z"
-                                    />
-                                </svg>
-                            </div>Share on Reddit</div>
-                    </a>
+
+
 
                     <!-- Sharingbutton WhatsApp -->
-                    <a class="resp-sharing-button__link" href="whatsapp://send?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.%20http%3A%2F%2Fsharingbuttons.io"
-                        target="_blank" aria-label="Share on WhatsApp">
+                    <a class="resp-sharing-button__link" :href=wplink target="_blank" aria-label="Share on WhatsApp">
                         <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--large">
                             <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
@@ -122,29 +112,9 @@
                             </div>Share on WhatsApp</div>
                     </a>
 
-                    <!-- Sharingbutton VK -->
-                    <a class="resp-sharing-button__link" href="http://vk.com/share.php?title=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io"
-                        target="_blank" aria-label="Share on VK">
-                        <div class="resp-sharing-button resp-sharing-button--vk resp-sharing-button--large">
-                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 6.352 5.15 11.5 11.5 11.5 6.352 0 11.5-5.148 11.5-11.5C23.5 5.65 18.352.5 12 .5zm8.11 16.82h-2.603c-.244 0-.48-.094-.658-.26l-1.98-1.862c-.118-.112-.276-.175-.438-.175-.355 0-.646.287-.646.643v1c0 .36-.292.654-.654.654h-1.655c-3.935 0-7.385-6.898-8.185-9.093-.018-.052-.028-.105-.028-.16.002-.247.204-.445.452-.445h2.637c.24 0 .456.14.556.355.57 1.42 1.31 2.764 2.2 4.004.126.14.304.217.49.214.357-.006.64-.3.63-.656-.014-.894-.034-1.958-.034-2.328 0-1.493-1.106-1.313-1.106-1.313.355-.49.94-.76 1.543-.717h2.182c.537 0 .974.435.974.972v3.093c0 .896.646 1.502 1.646-.43.37-.718 1.527-2.848 1.527-2.848.114-.214.337-.347.577-.347h2.9c1.323 0 .358 1.502-.175 2.21-.392.52-1.31 1.727-1.873 2.47-.267.353-.238.845.07 1.165 0 0 1.74 1.834 2.22 2.31.685.673.685 1.545-.57 1.545z"
-                                    />
-                                </svg>
-                            </div>Share on VK</div>
-                    </a>
 
-                    <!-- Sharingbutton Telegram -->
-                    <a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io"
-                        target="_blank" aria-label="Share on Telegram">
-                        <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--large">
-                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M12 23.5c6.35 0 11.5-5.15 11.5-11.5S18.35.5 12 .5.5 5.65.5 12 5.65 23.5 12 23.5zM2.505 11.053c-.31.118-.505.738-.505.738s.203.62.513.737l3.636 1.355 1.417 4.557a.787.787 0 0 0 1.25.375l2.115-1.72a.29.29 0 0 1 .353-.01L15.1 19.85a.786.786 0 0 0 .746.095.786.786 0 0 0 .487-.573l2.793-13.426a.787.787 0 0 0-1.054-.893l-15.568 6z"
-                                        fill-rule="evenodd" />
-                                </svg>
-                            </div>Share on Telegram</div>
-                    </a>
+
+
 
 
                 </div>

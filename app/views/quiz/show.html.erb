@@ -1,22 +1,83 @@
-<div id="app">
+<div id="app" class=" z-depth-4">
 
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
                         My relationship status ?
                 </div>
 
-                <input type="radio" id="11" value=1 v-model="answers[0]">
-                <label for="11">Single</label>
-                <br>
-                <input type="radio" id="12" value=2 v-model="answers[0]">
-                <label for="12">Taken</label>
-                <br>
-                <input type="radio" id="13" value=3 v-model="answers[0]">
-                <label for="13">Not possible </label>
-                <br>
-                <input type="radio" id="14" value=4 v-model="answers[0]">
-                <label for="14">very unpredictable</label>
-                <br>
+                <ul class="collection">
+
+                        <li class="collection-item ">
+
+                                <div class="myclass" style="width: 70%;">
+                                        <div class="innerpadding">
+                                                <input type="radio" id="11" value=1 v-model="answers[0]">
+                                                <label for="11">Single</label>
+                                                <span class="right">75%</span>
+                                        </div>
+
+                                </div>
+
+                        </li>
+                        <li class="collection-item ">
+
+                                <div class="myclass" style="width: 30%;">
+                                        <div class="innerpadding">
+                                                <input type="radio" id="12" value=1 v-model="answers[0]">
+                                                <label for="12">Taken</label>
+                                                <span class="right">75%</span>
+                                        </div>
+
+                                </div>
+
+                        </li>
+                        <li class="collection-item ">
+
+                                <div class="myclass" style="width: 70%;">
+                                        <div class="innerpadding">
+                                                <input type="radio" id="11" value=1 v-model="answers[0]">
+                                                <label for="11">Single</label>
+                                                <span class="right">75%</span>
+                                        </div>
+
+                                </div>
+
+                        </li>
+                        <li class="collection-item ">
+
+                                <div class="myclass" style="width: 70%;">
+                                        <div class="innerpadding">
+                                                <input type="radio" id="11" value=1 v-model="answers[0]">
+                                                <label for="11">Single</label>
+                                                <span class="right">75%</span>
+                                        </div>
+
+                                </div>
+
+                        </li>
+
+                        <li class="collection-item">
+                                <input type="radio" id="12" value=2 v-model="answers[0]">
+                                <label for="12">Taken</label>
+                                <span class="right">75%</span>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="13" value=3 v-model="answers[0]">
+                                <label for="13">Not possible </label>
+                                <span class="right">75%</span>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="14" value=4 v-model="answers[0]">
+                                <label for="14">very unpredictable</label>
+                                <span class="right">75%</span>
+                        </li>
+                </ul>
+
+
+
+
+
+
 
         </div>
 
@@ -171,6 +232,7 @@
                 <label for="94">four</label>
                 <br>
 
+
         </div>
         <div class="question">
                 <div class="qtext">
@@ -194,10 +256,10 @@
         <div class="submitbutton">
 
                 <button @click="submitAnswers" class="purple lighten-1 btn waves-effect waves-light" type="submit" name="action">Submit
-                        
+
                 </button>
 
-               
+
         </div>
 
 

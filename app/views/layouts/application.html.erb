@@ -4,12 +4,12 @@
 <head>
   <title>Pimpom</title>
   <%= csrf_meta_tags %>
-  <meta name="theme-color" content="#ac57bc" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="theme-color" content="#ac57bc" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
       <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
 <body>
 
@@ -23,8 +23,22 @@
   <div class="container">
     <%= yield %>
   </div>
-  
-  
+
+  <footer class="page-footer purple lighten-1">
+
+
+    <div class="container">
+      <div class="center">
+        <div class="footnote"> made with
+            <3 by @pvsukale</div>
+       
+      </div>
+
+
+    </div>
+
+  </footer>
+
 </body>
 
 </html>
