@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/q/:id' , to: 'quiz#show'
   post '/q/:id' , to: 'quiz#submit'
   post 'quiz/new', to: 'quiz#create'
-  root  'home#index'
+  root  'quiz#new'
 
   
 

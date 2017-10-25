@@ -14,6 +14,80 @@
  *= require_self
  */
  @import "materialize";
+
+ @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+.brand-logo {
+  font-family: 'Pacifico', cursive;
+}
+
+#app{
+margin:50px;
+}
+
+.qtext{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 25px;
+  margin:10px;
+}
+#thelink{
+  font-family: 'PT Sans', sans-serif;
+}
+label{
+  font-family: 'PT Sans', sans-serif;
+  color:black;
+  margin:2px;
+  
+}
+#newsub{
+  margin:50px;
+}
+
+.submitbutton{
+margin:20px;
+}
+.entername{
+  font-family: 'PT Sans', sans-serif;
+  
+}
+input{
+  font-size:25px;
+}
+.introtext{
+  text-align: center;
+  font-size:30px;
+  margin:20px;
+}
+.centerbutton{
+  margin: 0 auto;
+  text-align: center;
+}
+.btn{
+  font-family: 'PT Sans', sans-serif;
+}
+
+@media only screen and (max-width : 500px) {
+ #app{
+   margin:25px; 
+ }
+ .introtext{
+  text-align: center;
+  font-size:23px;
+  margin:5px;
+}
+ #newsub{
+  margin:10px;
+}
+ .qtext{
+   font-size:24px;
+   margin:5px;
+ }
+  }
+  
+
+
  .resp-sharing-button__link,
  .resp-sharing-button__icon {
    display: inline-block

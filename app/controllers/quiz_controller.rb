@@ -5,7 +5,7 @@ class QuizController < ApplicationController
     name = params[:name]
     @newquiz = Fquiz.new
     @newquiz.name = name
-    @newquiz.qid = name + rand(100..9999).to_s
+    @newquiz.qid = name + rand(100..999).to_s
     if @newquiz.save
       for i in 1..10 do
         Answer.create(qid: @newquiz.qid, qno: i, scores: [0, 0, 0, 0])

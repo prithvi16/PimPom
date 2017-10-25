@@ -2,20 +2,20 @@
 
         <div class="question">
                 <div class="qtext">
-                        THis is question
+                        My relationship status ?
                 </div>
 
                 <input type="radio" id="11" value=1 v-model="answers[0]">
-                <label for="11">One</label>
+                <label for="11">Single</label>
                 <br>
                 <input type="radio" id="12" value=2 v-model="answers[0]">
-                <label for="12">Two</label>
+                <label for="12">Taken</label>
                 <br>
                 <input type="radio" id="13" value=3 v-model="answers[0]">
-                <label for="13">three</label>
+                <label for="13">Not possible </label>
                 <br>
                 <input type="radio" id="14" value=4 v-model="answers[0]">
-                <label for="14">four</label>
+                <label for="14">very unpredictable</label>
                 <br>
 
         </div>
@@ -191,7 +191,14 @@
                 <br>
 
         </div>
+        <div class="submitbutton">
+
+                <button @click="submitAnswers" class="purple lighten-1 btn waves-effect waves-light" type="submit" name="action">Submit
+                        
+                </button>
+
+               
+        </div>
 
 
-        <button @click="submitAnswers">submit </button>
 </div>
