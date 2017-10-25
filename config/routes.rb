@@ -7,6 +7,7 @@ Rails.application.routes.draw do
  
   get '/q/:id' , to: 'quiz#show'
   post '/q/:id' , to: 'quiz#submit'
+  get '/r/:id', to: 'quiz#result'
   post 'quiz/new', to: 'quiz#create'
   root  'quiz#new'
 

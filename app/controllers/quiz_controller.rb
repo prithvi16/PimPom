@@ -1,6 +1,23 @@
 class QuizController < ApplicationController
   def new; end
 
+  def result
+    @newresult=[]
+    for j in 0..9 do
+      sresult = []
+      @a = Answer.find_by qid: params[:id], qno: j + 1
+
+      for i in 0..3 do
+
+        sresult.push(((@a.scores[i] / @a.scores.sum.to_f) * 100).to_i)
+
+            end
+      @newresult.push(sresult)
+
+    end
+    
+  end
+
   def create
     name = params[:name]
     @newquiz = Fquiz.new
@@ -25,10 +42,10 @@ class QuizController < ApplicationController
   def submit
     answers = params[:answers]
 
-    result = []
+   
 
     for j in 0..9 do
-      sresult = []
+      
       @a = Answer.find_by qid: params[:id], qno: j + 1
       case answers[j].to_i
       when 1
@@ -51,20 +68,14 @@ class QuizController < ApplicationController
 
     end
 
-    for i in 0..3 do
-      
-            sresult.push(((@a.scores[i] / @a.scores.sum.to_f) * 100).to_i)
-      
-          end
-  result.push(sresult)
+     
 
     end
 
-    
     respond_to do |format|
       format.json do
         render json: {
-          res: result
+          result: "/r/" + params[:id]
         }.to_json
       end
     end

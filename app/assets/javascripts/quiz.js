@@ -28,13 +28,15 @@
             },
             methods: {
                 submitAnswers: function () {
-                    Turbolinks.visit("/", { action: "replace" })
+                   
+                    
                     $.ajax({
                         type: "POST",
                         url: Window.url,
                         data: { answers: this.answers },
                         success: function (resp) {
                             console.log(resp)
+                            Turbolinks.visit(resp.result, { action: "replace" })
                             
                         },
                         dataType: "json"
