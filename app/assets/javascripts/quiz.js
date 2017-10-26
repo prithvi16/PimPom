@@ -32,7 +32,7 @@
                     
                     $.ajax({
                         type: "POST",
-                        url: Window.url,
+                        url: window.location.href,
                         data: { answers: this.answers },
                         success: function (resp) {
                             console.log(resp)

@@ -9,7 +9,7 @@ class QuizController < ApplicationController
 
       for i in 0..3 do
 
-        sresult.push(((@a.scores[i] / @a.scores.sum.to_f) * 100).to_i)
+        sresult.push(((@a.scores[i] / @a.scores.sum.to_f) * 100).round(1))
 
             end
       @newresult.push(sresult)
@@ -43,7 +43,7 @@ class QuizController < ApplicationController
     answers = params[:answers]
 
    
-
+    
     for j in 0..9 do
       
       @a = Answer.find_by qid: params[:id], qno: j + 1
