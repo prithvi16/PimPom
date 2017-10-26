@@ -73,13 +73,38 @@ input{
 .collection .collection-item{
   padding:0;
 }
-.myclass{
+.resulttext{
+  position: absolute;
+  right: 5%;
+  top:3px;
+}
+.resultanswer{
+  position: absolute;
+  left:2.5%;
+  top:3px;
+
+}
+.progress-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: space-around;
+  color: black;
  
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #ef99ff;
-  transition: width .3s linear;
+  background-color: #e085f1;
+}
+
+.progress {
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  position:realtive;
+  
+  background-color: #e9ecef;
+  border-radius: .25rem;
 }
 .centerbutton{
   margin: 0 auto;

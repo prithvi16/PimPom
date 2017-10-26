@@ -5,41 +5,53 @@
             My relationship status ?
         </div>
 
-        <ul class="collection">
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar" role="progressbar" style="<%= " width: #{@newresult[0][0]}% " %>" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
 
-            <li class="collection-item ">
+            </div>
+            <div class="resultanswer">
+                Single
+            </div>
+            <div class="resulttext">
+                <%= @newresult[0][0]%>%</div>
+        </div>
 
-                <div class="myclass" style=<%="width: #{@newresult[0][0]}%"  %>>
-                    <div class="innerpadding">
-                       
-                        <label for="11">Single</label>
-                        <span class="right">
-                            <%= @newresult[0][0]%>%</span>
-                    </div>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar" role="progressbar" style="<%= " width: #{@newresult[0][1]}% " %>" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
 
-                </div>
+            </div>
+            <div class="resultanswer">
+                Taken
+            </div>
+            <div class="resulttext">
+                <%= @newresult[0][1]%>%</div>
+        </div>
 
-            </li>
-            <li class="collection-item ">
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar" role="progressbar" style="<%= " width: #{@newresult[0][2]}% " %>" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
 
-                <div class="myclass" style=<%=" width:#{@newresult[0][1]}% \" "%> >
-                    <div class="innerpadding">
-                         taken <%= @newresult[0][1]%>%
-                         
-                                sdsdasdsa   
-                    </div>
-                    
+            </div>
+            <div class="resultanswer">
+                Not possible
+            </div>
+            <div class="resulttext">
+                <%= @newresult[0][2]%>%</div>
+        </div>
 
-                </div>
-                
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar" role="progressbar" style="<%= " width: #{@newresult[0][3]}% " %>" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
 
-            </li>
-
-
-
-
-
-        </ul>
+            </div>
+            <div class="resultanswer">
+                Unpredictable
+            </div>
+            <div class="resulttext">
+                <%= @newresult[0][3]%>%</div>
+        </div>
 
 
 
@@ -49,175 +61,175 @@
 
     </div>
 
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="21" value=1 v-model="answers[1]">
-        <label for="21">One</label>
+        <input type="radio " id="21 " value=1 v-model="answers[1] ">
+        <label for="21 ">One</label>
         <br>
-        <input type="radio" id="22" value=2 v-model="answers[1]">
-        <label for="22">Two</label>
+        <input type="radio " id="22 " value=2 v-model="answers[1] ">
+        <label for="22 ">Two</label>
         <br>
-        <input type="radio" id="23" value=3 v-model="answers[1]">
-        <label for="23">three</label>
+        <input type="radio " id="23 " value=3 v-model="answers[1] ">
+        <label for="23 ">three</label>
         <br>
-        <input type="radio" id="24" value=4 v-model="answers[1]">
-        <label for="24">four</label>
+        <input type="radio " id="24 " value=4 v-model="answers[1] ">
+        <label for="24 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="31" value=1 v-model="answers[2]">
-        <label for="31">One</label>
+        <input type="radio " id="31 " value=1 v-model="answers[2] ">
+        <label for="31 ">One</label>
         <br>
-        <input type="radio" id="32" value=2 v-model="answers[2]">
-        <label for="32">Two</label>
+        <input type="radio " id="32 " value=2 v-model="answers[2] ">
+        <label for="32 ">Two</label>
         <br>
-        <input type="radio" id="33" value=3 v-model="answers[2]">
-        <label for="33">three</label>
+        <input type="radio " id="33 " value=3 v-model="answers[2] ">
+        <label for="33 ">three</label>
         <br>
-        <input type="radio" id="34" value=4 v-model="answers[2]">
-        <label for="34">four</label>
+        <input type="radio " id="34 " value=4 v-model="answers[2] ">
+        <label for="34 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="41" value=1 v-model="answers[3]">
-        <label for="41">One</label>
+        <input type="radio " id="41 " value=1 v-model="answers[3] ">
+        <label for="41 ">One</label>
         <br>
-        <input type="radio" id="42" value=2 v-model="answers[3]">
-        <label for="42">Two</label>
+        <input type="radio " id="42 " value=2 v-model="answers[3] ">
+        <label for="42 ">Two</label>
         <br>
-        <input type="radio" id="43" value=3 v-model="answers[3]">
-        <label for="43">three</label>
+        <input type="radio " id="43 " value=3 v-model="answers[3] ">
+        <label for="43 ">three</label>
         <br>
-        <input type="radio" id="44" value=4 v-model="answers[3]">
-        <label for="44">four</label>
+        <input type="radio " id="44 " value=4 v-model="answers[3] ">
+        <label for="44 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="51" value=1 v-model="answers[4]">
-        <label for="11">One</label>
+        <input type="radio " id="51 " value=1 v-model="answers[4] ">
+        <label for="11 ">One</label>
         <br>
-        <input type="radio" id="52" value=2 v-model="answers[4]">
-        <label for="52">Two</label>
+        <input type="radio " id="52 " value=2 v-model="answers[4] ">
+        <label for="52 ">Two</label>
         <br>
-        <input type="radio" id="53" value=3 v-model="answers[4]">
-        <label for="53">three</label>
+        <input type="radio " id="53 " value=3 v-model="answers[4] ">
+        <label for="53 ">three</label>
         <br>
-        <input type="radio" id="54" value=4 v-model="answers[4]">
-        <label for="54">four</label>
+        <input type="radio " id="54 " value=4 v-model="answers[4] ">
+        <label for="54 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="61" value=1 v-model="answers[5]">
-        <label for="61">One</label>
+        <input type="radio " id="61 " value=1 v-model="answers[5] ">
+        <label for="61 ">One</label>
         <br>
-        <input type="radio" id="62" value=2 v-model="answers[5]">
-        <label for="62">Two</label>
+        <input type="radio " id="62 " value=2 v-model="answers[5] ">
+        <label for="62 ">Two</label>
         <br>
-        <input type="radio" id="63" value=3 v-model="answers[5]">
-        <label for="63">three</label>
+        <input type="radio " id="63 " value=3 v-model="answers[5] ">
+        <label for="63 ">three</label>
         <br>
-        <input type="radio" id="64" value=4 v-model="answers[5]">
-        <label for="64">four</label>
+        <input type="radio " id="64 " value=4 v-model="answers[5] ">
+        <label for="64 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="71" value=1 v-model="answers[6]">
-        <label for="71">One</label>
+        <input type="radio " id="71 " value=1 v-model="answers[6] ">
+        <label for="71 ">One</label>
         <br>
-        <input type="radio" id="72" value=2 v-model="answers[6]">
-        <label for="72">Two</label>
+        <input type="radio " id="72 " value=2 v-model="answers[6] ">
+        <label for="72 ">Two</label>
         <br>
-        <input type="radio" id="73" value=3 v-model="answers[6]">
-        <label for="73">three</label>
+        <input type="radio " id="73 " value=3 v-model="answers[6] ">
+        <label for="73 ">three</label>
         <br>
-        <input type="radio" id="74" value=4 v-model="answers[6]">
-        <label for="74">four</label>
+        <input type="radio " id="74 " value=4 v-model="answers[6] ">
+        <label for="74 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="81" value=1 v-model="answers[7]">
-        <label for="81">One</label>
+        <input type="radio " id="81 " value=1 v-model="answers[7] ">
+        <label for="81 ">One</label>
         <br>
-        <input type="radio" id="82" value=2 v-model="answers[7]">
-        <label for="82">Two</label>
+        <input type="radio " id="82 " value=2 v-model="answers[7] ">
+        <label for="82 ">Two</label>
         <br>
-        <input type="radio" id="83" value=3 v-model="answers[7]">
-        <label for="83">three</label>
+        <input type="radio " id="83 " value=3 v-model="answers[7] ">
+        <label for="83 ">three</label>
         <br>
-        <input type="radio" id="84" value=4 v-model="answers[7]">
-        <label for="84">four</label>
+        <input type="radio " id="84 " value=4 v-model="answers[7] ">
+        <label for="84 ">four</label>
         <br>
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="91" value=1 v-model="answers[8]">
-        <label for="91">One</label>
+        <input type="radio " id="91 " value=1 v-model="answers[8] ">
+        <label for="91 ">One</label>
         <br>
-        <input type="radio" id="92" value=2 v-model="answers[8]">
-        <label for="92">Two</label>
+        <input type="radio " id="92 " value=2 v-model="answers[8] ">
+        <label for="92 ">Two</label>
         <br>
-        <input type="radio" id="93" value=3 v-model="answers[8]">
-        <label for="93">three</label>
+        <input type="radio " id="93 " value=3 v-model="answers[8] ">
+        <label for="93 ">three</label>
         <br>
-        <input type="radio" id="94" value=4 v-model="answers[8]">
-        <label for="94">four</label>
+        <input type="radio " id="94 " value=4 v-model="answers[8] ">
+        <label for="94 ">four</label>
         <br>
 
 
     </div>
-    <div class="question">
-        <div class="qtext">
+    <div class="question ">
+        <div class="qtext ">
             THis is question
         </div>
 
-        <input type="radio" id="101" value=1 v-model="answers[9]">
-        <label for="101">One</label>
+        <input type="radio " id="101 " value=1 v-model="answers[9] ">
+        <label for="101 ">One</label>
         <br>
-        <input type="radio" id="102" value=2 v-model="answers[9]">
-        <label for="102">Two</label>
+        <input type="radio " id="102 " value=2 v-model="answers[9] ">
+        <label for="102 ">Two</label>
         <br>
-        <input type="radio" id="103" value=3 v-model="answers[9]">
-        <label for="103">three</label>
+        <input type="radio " id="103 " value=3 v-model="answers[9] ">
+        <label for="103 ">three</label>
         <br>
-        <input type="radio" id="104" value=4 v-model="answers[9]">
-        <label for="104">four</label>
+        <input type="radio " id="104 " value=4 v-model="answers[9] ">
+        <label for="104 ">four</label>
         <br>
 
     </div>
