@@ -4,222 +4,278 @@
                 <div class="qtext">
                         My relationship status ?
                 </div>
-
                 <ul class="collection">
-
                         <li class="collection-item ">
-
                                 <div class="innerpading">
                                         <input type="radio" id="11" value=1 v-model="answers[0]">
                                         <label for="11">Single</label>
-                                        
                                 </div>
-
-
-
-
                         </li>
-
-
-
-
                         <li class="collection-item">
                                 <input type="radio" id="12" value=2 v-model="answers[0]">
                                 <label for="12">Taken</label>
-                                
+
                         </li>
                         <li class="collection-item">
                                 <input type="radio" id="13" value=3 v-model="answers[0]">
                                 <label for="13">Not possible </label>
-                               
+
                         </li>
                         <li class="collection-item">
                                 <input type="radio" id="14" value=4 v-model="answers[0]">
                                 <label for="14">very unpredictable</label>
-                                
                         </li>
                 </ul>
-
-
-
-
-
-
-
         </div>
-
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        When do you think I will get married?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="21" value=1 v-model="answers[1]">
+                                        <label for="21">By the end of this year</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="22" value=2 v-model="answers[1]">
+                                <label for="22">within 5 years </label>
 
-                <input type="radio" id="21" value=1 v-model="answers[1]">
-                <label for="21">One</label>
-                <br>
-                <input type="radio" id="22" value=2 v-model="answers[1]">
-                <label for="22">Two</label>
-                <br>
-                <input type="radio" id="23" value=3 v-model="answers[1]">
-                <label for="23">three</label>
-                <br>
-                <input type="radio" id="24" value=4 v-model="answers[1]">
-                <label for="24">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="23" value=3 v-model="answers[1]">
+                                <label for="23">after 5 years </label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="24" value=4 v-model="answers[1]">
+                                <label for="24">Nope , marriage is not for you.</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        If I am stuck on an island what will I prefer?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="31" value=1 v-model="answers[2]">
+                                        <label for="31">A partner</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="32" value=2 v-model="answers[2]">
+                                <label for="32">Gaming PC</label>
 
-                <input type="radio" id="31" value=1 v-model="answers[2]">
-                <label for="31">One</label>
-                <br>
-                <input type="radio" id="32" value=2 v-model="answers[2]">
-                <label for="32">Two</label>
-                <br>
-                <input type="radio" id="33" value=3 v-model="answers[2]">
-                <label for="33">three</label>
-                <br>
-                <input type="radio" id="34" value=4 v-model="answers[2]">
-                <label for="34">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="33" value=3 v-model="answers[2]">
+                                <label for="33">TV series</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="34" value=4 v-model="answers[2]">
+                                <label for="34">Alchohol</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        If I was friends with a celebrity who would it be?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="41" value=1 v-model="answers[3]">
+                                        <label for="41">Amitabh Bachhan</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="42" value=2 v-model="answers[3]">
+                                <label for="42">Sachin Tendulkar</label>
 
-                <input type="radio" id="41" value=1 v-model="answers[3]">
-                <label for="41">One</label>
-                <br>
-                <input type="radio" id="42" value=2 v-model="answers[3]">
-                <label for="42">Two</label>
-                <br>
-                <input type="radio" id="43" value=3 v-model="answers[3]">
-                <label for="43">three</label>
-                <br>
-                <input type="radio" id="44" value=4 v-model="answers[3]">
-                <label for="44">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="43" value=3 v-model="answers[3]">
+                                <label for="43">Elon Musk</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="44" value=4 v-model="answers[3]">
+                                <label for="44">Rahul Gandhi</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        How would you rate my sense of humour?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="51" value=1 v-model="answers[4]">
+                                        <label for="51">Really Good!</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="52" value=2 v-model="answers[4]">
+                                <label for="52">Umm its okaay</label>
 
-                <input type="radio" id="51" value=1 v-model="answers[4]">
-                <label for="11">One</label>
-                <br>
-                <input type="radio" id="52" value=2 v-model="answers[4]">
-                <label for="52">Two</label>
-                <br>
-                <input type="radio" id="53" value=3 v-model="answers[4]">
-                <label for="53">three</label>
-                <br>
-                <input type="radio" id="54" value=4 v-model="answers[4]">
-                <label for="54">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="53" value=3 v-model="answers[4]">
+                                <label for="53">Please stop making jokes.</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="54" value=4 v-model="answers[4]">
+                                <label for="54">It does not exist.</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        If the world was ending today,what do you think I'll do ?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="61" value=1 v-model="answers[5]">
+                                        <label for="61">Confess to your crush</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="62" value=2 v-model="answers[5]">
+                                <label for="62">Drink alcohol</label>
 
-                <input type="radio" id="61" value=1 v-model="answers[5]">
-                <label for="61">One</label>
-                <br>
-                <input type="radio" id="62" value=2 v-model="answers[5]">
-                <label for="62">Two</label>
-                <br>
-                <input type="radio" id="63" value=3 v-model="answers[5]">
-                <label for="63">three</label>
-                <br>
-                <input type="radio" id="64" value=4 v-model="answers[5]">
-                <label for="64">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="63" value=3 v-model="answers[5]">
+                                <label for="63">Spend time with friends and family</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="64" value=4 v-model="answers[5]">
+                                <label for="64">Steal stuff from stores</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        How will you remember me if we meet after 10 years?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="71" value=1 v-model="answers[6]">
+                                        <label for="71">The funny one</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="72" value=2 v-model="answers[6]">
+                                <label for="72">The cute one</label>
 
-                <input type="radio" id="71" value=1 v-model="answers[6]">
-                <label for="71">One</label>
-                <br>
-                <input type="radio" id="72" value=2 v-model="answers[6]">
-                <label for="72">Two</label>
-                <br>
-                <input type="radio" id="73" value=3 v-model="answers[6]">
-                <label for="73">three</label>
-                <br>
-                <input type="radio" id="74" value=4 v-model="answers[6]">
-                <label for="74">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="73" value=3 v-model="answers[6]">
+                                <label for="73">The smart one</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="74" value=4 v-model="answers[6]">
+                                <label for="74">The emotional one ;)</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        For how many bucks will you slap me?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="81" value=1 v-model="answers[7]">
+                                        <label for="81"> 10 Rs</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="82" value=2 v-model="answers[7]">
+                                <label for="82"> 10 Lakh</label>
 
-                <input type="radio" id="81" value=1 v-model="answers[7]">
-                <label for="81">One</label>
-                <br>
-                <input type="radio" id="82" value=2 v-model="answers[7]">
-                <label for="82">Two</label>
-                <br>
-                <input type="radio" id="83" value=3 v-model="answers[7]">
-                <label for="83">three</label>
-                <br>
-                <input type="radio" id="84" value=4 v-model="answers[7]">
-                <label for="84">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="83" value=3 v-model="answers[7]">
+                                <label for="83">10 Crore</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="84" value=4 v-model="answers[7]">
+                                <label for="84">Nope I won't</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        If I was born as your pet what would I be?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="91" value=1 v-model="answers[8]">
+                                        <label for="91">A cute cat</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="92" value=2 v-model="answers[8]">
+                                <label for="92">A lovely Dog</label>
 
-                <input type="radio" id="91" value=1 v-model="answers[8]">
-                <label for="91">One</label>
-                <br>
-                <input type="radio" id="92" value=2 v-model="answers[8]">
-                <label for="92">Two</label>
-                <br>
-                <input type="radio" id="93" value=3 v-model="answers[8]">
-                <label for="93">three</label>
-                <br>
-                <input type="radio" id="94" value=4 v-model="answers[8]">
-                <label for="94">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="93" value=3 v-model="answers[8]">
+                                <label for="93">A cheesy parrot</label>
 
-
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="94" value=4 v-model="answers[8]">
+                                <label for="94">A Hamster</label>
+                        </li>
+                </ul>
         </div>
-        <div class="question">
+        <div class="question ">
                 <div class="qtext">
-                        THis is question
+                        Where would you like to go out me?
                 </div>
+                <ul class="collection">
+                        <li class="collection-item ">
+                                <div class="innerpading">
+                                        <input type="radio" id="101" value=1 v-model="answers[9]">
+                                        <label for="101">Someplace quiet</label>
+                                </div>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="102" value=2 v-model="answers[9]">
+                                <label for="102">An adventure</label>
 
-                <input type="radio" id="101" value=1 v-model="answers[9]">
-                <label for="101">One</label>
-                <br>
-                <input type="radio" id="102" value=2 v-model="answers[9]">
-                <label for="102">Two</label>
-                <br>
-                <input type="radio" id="103" value=3 v-model="answers[9]">
-                <label for="103">three</label>
-                <br>
-                <input type="radio" id="104" value=4 v-model="answers[9]">
-                <label for="104">four</label>
-                <br>
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="103" value=3 v-model="answers[9]">
+                                <label for="103">Eating food</label>
 
+                        </li>
+                        <li class="collection-item">
+                                <input type="radio" id="104" value=4 v-model="answers[9]">
+                                <label for="104">Lets just stay home</label>
+                        </li>
+                </ul>
         </div>
+
+
+
         <div class="submitbutton">
 
                 <button @click="submitAnswers" class="purple lighten-1 btn waves-effect waves-light" type="submit" name="action">Submit
